@@ -54,7 +54,7 @@ public class Main {
     }
 
     public static void fifthMethod(int[] minAndMax) {//метод для пятого массива
-
+        //проверяю просто, как это все работает
     }
 }
 
