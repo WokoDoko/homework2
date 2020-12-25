@@ -4,6 +4,11 @@ import java.util.Arrays;
 
 public class Main {
 
+    /**согласен с тем, что в заданиях не было
+    указано каждый пункт писать в отдельном
+    методе, но мне кажется такой формат более
+    удобопроверяемым + попрактиковал тему с методами=)*/
+
     public static void main(String[] args) {
 
         int[] reversedNumbers = {1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1};//первый массив
@@ -11,6 +16,7 @@ public class Main {
         int[] randomNum = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};//третий массив
         int[][] squaredArray = new int[4][4]; //четвертый массив
         int [] minAndMax = {-100, -50, 234, 0, 11, -1000, 421, -421}; //пятый массив
+        int [] eqtyCheck = {1,1,1,1,1,1,1,1}; //шестой массив
 
 
         firstMethod(reversedNumbers);//вызов первого массива
@@ -18,6 +24,7 @@ public class Main {
         thirdMethod(randomNum);//вызов третьего
         fourthMethod(squaredArray);//вызов четвертого массива
         fifthMethod(minAndMax);//вызов пятого массива
+        sixthMethod(eqtyCheck);//вызов шестого массива
     }
 
     public static void firstMethod(int[] array) { //метод для первого пункта
@@ -71,7 +78,23 @@ public class Main {
         System.out.println(max);
         System.out.println(min);
     }
-}
+    public static void sixthMethod(int []array) { //метод для шестого массива
+        float sum=0f;
+        float sum2=0f;
+        for (int i = 0; i < array.length; i++){
+                sum += array[i];}
+            for (int j = array.length-1; j<array.length&&j>=0; j--) { //да, согласен, что тут не обязательно было массив с другой стороны перебирать. Но я просто проверял, можно так сделать или нет.
+                sum2 += array[j];
+                if (sum2 == sum / 2){
+                    System.out.println("true");
+            }
+        }
+        }
+        //private static void displacement (int [] array) {
+
+
+    }
+
 
 
 
